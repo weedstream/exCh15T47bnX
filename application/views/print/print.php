@@ -33,6 +33,29 @@
     </ul>
 </div>
 
+<div class="card" style="width: 28rem; overflow: hidden;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">
+            <h3>SELAMAT DATANG</h3>
+            <h5>Di Pengadilan Negeri Purbalingga</h5>
+            <h8>Jl. Ahmadi No.80, Bancar, Kec. Purbalingga, Kabupaten Purbalingga</h8>
+        </li>
+        <li class="list-group-item text-center">
+            <?php foreach ($antrianloket as $a => $data) { ?>
+                <div class="row card-link" style="margin-left: 10px;"><?= $data->tgl_antrian_loket; date("h:i:sa"); ?></div>
+                <h2>ANTRIAN </h2>
+                <h1><?php echo $data->no_antrian_loket ?></h1><h4><?= $data->name_loket ?></h4>
+        </li>
+    <?php } ?>
+    <!-- <?php foreach ($loket as $key => $data) { ?>
+        
+    <?php } ?> -->
+    <li class="list-group-item text-center">
+        <h3>Silahkan Menunggu Nomer Anda Dipanggil</h3>
+    </li>
+    </ul>
+</div>
+
 <?php
 
 ?>
